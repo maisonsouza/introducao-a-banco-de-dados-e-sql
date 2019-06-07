@@ -86,7 +86,7 @@ select * from compras where observacoes like '%a%';
 > Nota: Não existe diferença de usar aspas simples e aspas duplas.
 
 ## Atualizando e excluindo dados
-#### utilzando o Between
+#### Utilzando o Between
 ```
 select * from compras where valor between 200 and 700;
 select * from compras where data between '2009-01-01' and '2010-01-01';
