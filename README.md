@@ -60,8 +60,9 @@ select * from compras where valor > 1000;
 
 #### Mais de um filtro com and
 ```
-select * from compras where valor < 1000 and recebido =1;
+select * from compras where valor < 1000.00 and recebido =1;
 ```
+> Nota: Para casas decimais utilize .
 
 #### Mais de um filtro com or
 ```
@@ -78,3 +79,20 @@ select * from compras where recebido <> '0';
 select * from compras where observacoes like '%a%';
 ```
 > Nota: Não existe diferença de usar aspas simples e aspas duplas.
+
+## Atualizando e excluindo dados
+#### utilzando o Between
+```
+select * from compras where valor between 200 and 700;
+select * from compras where data between '2009-01-01' and '2010-01-01';
+```
+
+#### Alterando um valor da tabela
+```
+update compras set valor = 900 where id =20;
+```
+#### Deletando uma linha da tabela
+```
+delete from compras where id = 41;
+```
+
