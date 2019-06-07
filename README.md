@@ -16,6 +16,11 @@ Utilizaremos o console.
  ```
  create database controle_compras;
  ```
+ 
+ #### Verificando os bancos de dados existentes
+ ```
+ show databases;
+ ```
  > Nota: Todo comando sql termina com ;(ponto-e-virgula).
  
  #### Selecionando o banco de dados
