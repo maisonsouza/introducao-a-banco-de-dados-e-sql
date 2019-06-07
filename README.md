@@ -112,9 +112,12 @@ alter table compras modify recebido tinyint(1) default '0';
 ```
 alter table compras add column forma_pagto enum ('cartao', 'boleto', 'dinheiro');
 ```
-> Nota - not null impede que o campo seja null
-> Default - configura um valor padrão para o campo
-> Enum (um tipo que configura entrada padrão para o campo)
+```
+ Nota - not null impede que o campo seja null
+ Default - configura um valor padrão para o campo
+ Enum (um tipo que configura entrada padrão para o campo)
 
+
+```
 
 
