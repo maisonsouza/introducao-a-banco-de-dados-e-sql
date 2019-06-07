@@ -101,3 +101,16 @@ update compras set valor = 900 where id =20;
 delete from compras where id = 41;
 ```
 
+## Alterando e restringindo o formato das nossas tabelas
+#### Alterando os parametros da tabela
+```
+alter table compras modify observacoes varchar (255) not null;
+alter table compras modify recebido tinyint(1) default '0';
+```
+
+#### Adicionando colunas na tabela já criada
+```
+alter table compras add column forma_pagto enum ('cartao', 'boleto', 'dinheiro');
+```
+
+
