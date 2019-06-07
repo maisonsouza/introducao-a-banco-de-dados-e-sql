@@ -77,3 +77,4 @@ select * from compras where recebido <> '0';
 ```
 select * from compras where observacoes like '%a%';
 ```
+> Nota: Não existe diferença de usar aspas simples e aspas duplas.
